@@ -389,7 +389,7 @@
     <div class="recipe-hero">
         <div class="recipe-photo" id="recipePhotoBlock">
             <!-- ЗДЕСЬ ВСТАВЬТЕ ВАШУ ФОТОГРАФИЮ ДЛЯ ЗЕЛЁНОГО СМУЗИ -->
-            <img id="recipePhotoImg" src="images/losos-zapechennyy.jpg" alt="Мидии запечённые" onerror="this.src='https://placehold.co/600x400/fdf5ec/c28554?text=Мидии+запечённые'">
+            <img id="recipePhotoImg" src="images/midii.jpg" alt="Мидии запечённые" onerror="this.src='images/midii.jpg'">
         </div>
         <div class="recipe-info">
             <h1>Мидии запечённые</h1>
@@ -493,17 +493,17 @@
     // ⭐⭐⭐ ДЛЯ ВСТАВКИ ФОТОГРАФИИ — ЗАМЕНИТЕ ЭТУ ПЕРЕМЕННУЮ ⭐⭐⭐
     // ==================================================
     // Просто укажите путь к вашей картинке (можно относительный или абсолютный URL)
-    const RECIPE_PHOTO_URL = "images/losos-zapechennyy.jpg";
+    const RECIPE_PHOTO_URL = "images/midii.jpg";
     // Примеры:
-    // const RECIPE_PHOTO_URL = "images/losos-zapechennyy.jpg";
-    // const RECIPE_PHOTO_URL = "images/losos-zapechennyy.jpg";
+    // const RECIPE_PHOTO_URL = "images/midii.jpg";
+    // const RECIPE_PHOTO_URL = "images/midii.jpg";
     // ==================================================
     
     const photoImg = document.getElementById('recipePhotoImg');
     if (photoImg) {
         photoImg.src = RECIPE_PHOTO_URL;
         photoImg.onerror = function() {
-            this.src = "https://placehold.co/600x400/fdf5ec/c28554?text=Мидии+запечённые";
+            this.src = "images/midii.jpg";
             this.alt = "Изображение не найдено";
         };
     }

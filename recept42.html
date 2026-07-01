@@ -389,7 +389,7 @@
     <div class="recipe-hero">
         <div class="recipe-photo" id="recipePhotoBlock">
             <!-- ЗДЕСЬ ВСТАВЬТЕ ВАШУ ФОТОГРАФИЮ ДЛЯ ЗЕЛЁНОГО СМУЗИ -->
-            <img id="recipePhotoImg" src="images/goryachiy-shokolad.jpg" alt="Тирамису" onerror="this.src='https://placehold.co/600x400/fdf5ec/c28554?text=Тирамису'">
+            <img id="recipePhotoImg" src="images/termisu.jpg" alt="Тирамису" onerror="this.src='images/termisu.jpg'">
         </div>
         <div class="recipe-info">
             <h1>Тирамису</h1>
@@ -496,17 +496,17 @@
     // ⭐⭐⭐ ДЛЯ ВСТАВКИ ФОТОГРАФИИ — ЗАМЕНИТЕ ЭТУ ПЕРЕМЕННУЮ ⭐⭐⭐
     // ==================================================
     // Просто укажите путь к вашей картинке (можно относительный или абсолютный URL)
-    const RECIPE_PHOTO_URL = "images/goryachiy-shokolad.jpg";
+    const RECIPE_PHOTO_URL = "images/termisu.jpg";
     // Примеры:
-    // const RECIPE_PHOTO_URL = "images/goryachiy-shokolad.jpg";
-    // const RECIPE_PHOTO_URL = "images/goryachiy-shokolad.jpg";
+    // const RECIPE_PHOTO_URL = "images/termisu.jpg";
+    // const RECIPE_PHOTO_URL = "images/termisu.jpg";
     // ==================================================
     
     const photoImg = document.getElementById('recipePhotoImg');
     if (photoImg) {
         photoImg.src = RECIPE_PHOTO_URL;
         photoImg.onerror = function() {
-            this.src = "https://placehold.co/600x400/fdf5ec/c28554?text=Тирамису";
+            this.src = "images/termisu.jpg";
             this.alt = "Изображение не найдено";
         };
     }

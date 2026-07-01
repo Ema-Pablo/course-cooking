@@ -389,7 +389,7 @@
     <div class="recipe-hero">
         <div class="recipe-photo" id="recipePhotoBlock">
             <!-- ЗДЕСЬ ВСТАВЬТЕ ВАШУ ФОТОГРАФИЮ ДЛЯ САЛАТА ЦЕЗАРЬ С КРЕВЕТКАМИ -->
-            <img id="recipePhotoImg" src="images/zapekanka-tvorozhnaya.jpg" alt="Цезарь с креветками" onerror="this.src='https://placehold.co/600x400/fdf5ec/c28554?text=Цезарь+с+креветками'">
+            <img id="recipePhotoImg" src="images/cezar.jpg" alt="Цезарь с креветками" onerror="this.src='images/cezar.jpg'">
         </div>
         <div class="recipe-info">
             <h1>Цезарь с креветками</h1>
@@ -509,7 +509,7 @@
     // ⭐⭐⭐ ДЛЯ ВСТАВКИ ФОТОГРАФИИ — ЗАМЕНИТЕ ЭТУ ПЕРЕМЕННУЮ ⭐⭐⭐
     // ==================================================
     // Просто укажите путь к вашей картинке (можно относительный или абсолютный URL)
-    const RECIPE_PHOTO_URL = "images/zapekanka-tvorozhnaya.jpg";
+    const RECIPE_PHOTO_URL = "images/cezar.jpg";
     // Примеры:
     // const RECIPE_PHOTO_URL = "images/zapekanka-tvorozhnaya.jpg";
     // const RECIPE_PHOTO_URL = "images/zapekanka-tvorozhnaya.jpg";
@@ -519,7 +519,7 @@
     if (photoImg) {
         photoImg.src = RECIPE_PHOTO_URL;
         photoImg.onerror = function() {
-            this.src = "https://placehold.co/600x400/fdf5ec/c28554?text=Цезарь+с+креветками";
+            this.src = "images/cezar.jpg";
             this.alt = "Изображение не найдено";
         };
     }
